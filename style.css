@@ -1,0 +1,323 @@
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    *:root {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .mobile-hamburger {
+        display: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+    .mobile-hamburger-scrolled {
+        color: rgb(0, 0, 0);
+    }
+
+    .text {
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .text-scrolled {
+        color: rgb(0, 0, 0);
+    }
+
+    body {
+        height: 200vh;
+    }
+
+    header {
+        background-image: url(images/bg-hero.png);
+        background-attachment: fixed;
+        height: 100dvh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3vw;
+        margin: 3vw;
+    }
+
+    nav {
+        align-items: center;
+        position: fixed;
+        right: 0;
+        left: 0;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding: 0.4vw;
+    }
+
+    nav ul li a {
+        padding-inline: 1.5vw;
+        padding-block: 0.6vw;
+        color: #ffffff;
+        font-size: 1.1vw;
+
+    }
+
+    nav ul li a:active {
+        padding-right: 1.5vw;
+        color: white;
+        background-color: green;
+        border-radius: 0.5vw;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 6vw;
+        padding-block: 2vw;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-wrapper-scrolled {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 4vw;
+        padding-right: 1vw;
+    }
+
+    #hero {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vw;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4vw;
+    }
+
+    .hero-text h1,p{
+        color: white;
+    }
+    .hero-text span{
+        color: #9BEA51;
+    }
+
+    .description {
+        padding-inline: 30vw;
+    }
+
+    .hero-btn button{
+        background-color: #709C47;
+        border: none;
+        padding: 0.8vw 2.3vw;
+        border-radius: 0.3vw;
+        cursor: pointer;
+    }
+
+    .hero-btn button a{
+        color: white;
+        font-size: 1.1vw;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        nav ul{
+            display: none;
+        }
+
+        header {
+            height: 100dvh;
+        }
+
+        .logo img {
+            display: none;
+        }
+
+        .mobile-hamburger {
+            display: flex;
+        }
+
+        nav {
+            padding: 4vw 3vw;
+        }
+
+        .nav-wrapper {
+            border-radius: 1vw;
+        }
+
+        .hero-wrapper {
+            margin-top: 16vw;
+        }
+
+        .hero-text h1 {
+            font-size: 8vw;
+            line-height: 110%;
+        }
+
+        .description p {
+            display: none;
+        }
+
+        .hero-btn button {
+            padding: 2vw 4vw;
+            border-radius: 1.6vw;
+            margin-top: 3vw;
+        }
+
+        .hero-btn button a{
+            padding: 2vw 4vw;
+            font-size: 2.8vw;
+        }
+
+        .about-wrapper {
+            padding-inline: 4vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            text-align: center;
+            padding-top: 12vw;
+        }
+
+        .desc-title p{
+            font-size: 4vw;
+            color: black;
+        }
+
+        #seller {
+            background-color: #709C47;
+            margin-top: 7vh;
+        }
+
+        .seller-wrapper {
+            padding-inline: 4vw;
+            padding-block: 4vw;
+        }
+
+        .seller-title h1{
+            text-align: center;
+            color: white;
+        }
+        
+        /* slider */
+        .slider-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px; /* Sesuaikan dengan lebar slider yang diinginkan */
+            margin: auto;
+            cursor: grab;
+        }
+
+        .seller-card {
+            flex: 0 0 auto;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .seller-card-wrapper {
+            display: flex;
+            gap: 20px; /* Jarak antar card */
+            cursor: grab;
+        }
+
+        .card {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Sesuaikan dengan tinggi gambar yang diinginkan */
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .buy-btn, .like-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .nav-btn {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /* slider end */
+
+        /* footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            bottom: 0;
+        }
+    }

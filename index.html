@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <!-- font -->
+        <script src="https://kit.fontawesome.com/cff8b87f33.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>EkoCraft: Pasar kreatif dan ramah lingkungan</title>
+    </head>
+    <body>
+        <header >
+            <nav >
+                <div class="nav" >
+                    <div class="nav-wrapper" >
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                            <div class="text">
+                                <h1>EkoCraft</h1>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <ul>
+                                <li>
+                                    <a href="#hero">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">FaQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section id="hero">
+                <div class="hero">
+                    <div class="hero-wrapper">
+                        <div class="hero-text">
+                            <div class="title">
+                                <h1>
+                                    EkoCraft: Pasar Kreatif <span>Ramah Lingkungan</span>
+                                </h1>
+                            </div>
+                            <div class="description">
+                                <p>
+                                    Platform seni dan kerajinan unik, menghubungkan pengrajin Indonesia dengan konsumen yang menghargai keberlanjutan dan kearifan lokal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-btn">
+                        <button href="#">
+                            <a href="#">Mulai Eksplor</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="about-wrapper">
+                    <div class="about-title">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="desc-title">
+                        <p>Platform seni dan kerajinan unik, menghubungkan pengrajin Indonesia dengan konsumen yang menghargai keberlanjutan dan kearifan lokal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seller">
+                <div class="slider-container">
+                    <div class="seller-card" id="slider">
+                        <div class="seller-card-wrapper" id="slider-wrapper">
+                            <div class="card" draggable="true" ondragstart="dragStart(event)">
+                                <img src="https://placekitten.com/300/200" alt="Product Image">
+                                <div class="card-content">
+                                    <div class="product-name">Product 1</div>
+                                    <div class="product-price">$19.99</div>
+                                    <button class="buy-btn">Buy Now</button>
+                                    <button class="like-btn">Like</button>
+                                </div>
+                            </div>
+                            <div class="card" draggable="true" ondragstart="dragStart(event)">
+                                <img src="https://placekitten.com/300/201" alt="Product Image">
+                                <div class="card-content">
+                                    <div class="product-name">Product 2</div>
+                                    <div class="product-price">$29.99</div>
+                                    <button class="buy-btn">Buy Now</button>
+                                    <button class="like-btn">Like</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy;2023 EkoCraft
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="slider.js"></script>
+    </body>
+    </html>
